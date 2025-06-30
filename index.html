@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Grid System</title>
+  </head>
+  <body>
+    <h1 class="text-center">Pratica con il Grid System</h1>
+
+    <!-- Esercizio 1 -->
+    <div class="exercise-1">
+      <h2 class="text-center">Esercizio 1</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="p-3 border border-dark bg-primary text-light">Colonna 1</div>
+            <div class="p-3 border border-dark bg-primary text-light">Colonna 2</div>
+            <div class="p-3 border border-dark bg-primary text-light">Colonna 3</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Esercizio 2 -->
+    <div class="exercise-2 mt-5">
+      <h2 class="text-center">Esercizio 2</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="p-3 border border-dark bg-warning text-dark">Colonna 1</div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="p-3 border border-dark bg-warning text-dark">Colonna 2</div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="p-3 border border-dark bg-warning text-dark">Colonna 3</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Esercizio 3 -->
+    <div class="exercise-3 mt-5">
+      <h2 class="text-center">Esercizio 3</h2>
+      <div class="container my-4">
+        <!-- Griglia 1: subito orizzontale -->
+        <div class="d-flex flex-row text-white mb-4">
+          <div class="p-3 bg-success border border-dark">Colonna 1</div>
+          <div class="p-3 bg-success border border-dark">Colonna 2</div>
+          <div class="p-3 bg-success border border-dark">Colonna 3</div>
+        </div>
+
+        <!-- Griglia 2: si allinea da sm -->
+        <div class="d-flex flex-column flex-sm-row text-white mb-4">
+          <div class="p-3 bg-success border border-dark">Colonna 1</div>
+          <div class="p-3 bg-success border border-dark">Colonna 2</div>
+          <div class="p-3 bg-success border border-dark">Colonna 3</div>
+        </div>
+
+        <!-- Griglia 3: si allinea da md -->
+        <div class="d-flex flex-column flex-md-row text-white mb-4">
+          <div class="p-3 bg-success border border-dark">Colonna 1</div>
+          <div class="p-3 bg-success border border-dark">Colonna 2</div>
+          <div class="p-3 bg-success border border-dark">Colonna 3</div>
+        </div>
+
+        <!-- Griglia 4: si allinea da lg -->
+        <div class="d-flex flex-column flex-lg-row text-white mb-4">
+          <div class="p-3 bg-success border border-dark">Colonna 1</div>
+          <div class="p-3 bg-success border border-dark">Colonna 2</div>
+          <div class="p-3 bg-success border border-dark">Colonna 3</div>
+        </div>
+
+        <!-- Griglia 5: si allinea da xl -->
+        <div class="d-flex flex-column flex-xl-row text-white mb-4">
+          <div class="p-3 bg-success border border-dark">Colonna 1</div>
+          <div class="p-3 bg-success border border-dark">Colonna 2</div>
+          <div class="p-3 bg-success border border-dark">Colonna 3</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Esercizio 4 -->
+    <div class="exercise-4 mt-5">
+      <h2 class="text-center">Esercizio 4</h2>
+      <div class="container">
+        <div class="row text-white">
+          <!-- Colonna sinistra -->
+          <div class="col-12 col-lg-3 mb-3 mb-lg-0">
+            <div class="p-3 bg-danger border border-dark">Colonna Sinistra</div>
+          </div>
+    
+          <!-- Colonna centrale -->
+          <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+            <div class="p-3 bg-danger border border-dark">Colonna Centrale</div>
+          </div>
+    
+          <!-- Colonna destra -->
+          <div class="col-12 col-lg-3">
+            <div class="p-3 bg-danger border border-dark">Colonna Destra</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Esercizio 5 -->
+    <div class="exercise-5 mt-5">
+      <h2 class="text-center">Esecizio 5</h2>
+      <div class="container my-4">
+        <div class="row">
+          <!-- Colonna più grande -->
+          <div class="col-12 col-lg-8 bg-info text-white p-3 border border-dark mb-3 mb-lg-0">
+            <div class="row">
+              <!-- Colonna annidata 1 -->
+              <div class="col-12 col-md-6 bg-secondary text-white p-3 border border-dark mb-3 mb-md-0">
+                Colonna Annidata 1
+              </div>
+
+              <!-- Colonna annidata 2 -->
+              <div class="col-12 col-md-6 bg-secondary text-white p-3 border border-dark">
+                Colonna Annidata 2
+              </div>
+            </div>
+          </div>
+
+          <!-- Colonna più piccola -->
+          <div class="col-12 col-lg-4 bg-info text-white p-3 border border-dark">
+            Colonna Esterna
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Esercizio 6 -->
+    <div class="exercise-6 mt-5">
+      <h2 class="text-center">Esercizio 6</h2>
+      <div class="container my-4">
+        <div class="row">
+          <!-- Prima colonna -->
+          <div class="col-12 col-lg-4 bg-dark text-white p-3 mb-3 mb-lg-0">
+            Colonna 1
+          </div>
+
+          <!-- Seconda colonna con offset -->
+          <div class="col-12 col-lg-4 offset-lg-2 bg-dark text-white p-3">
+            Colonna 2
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
